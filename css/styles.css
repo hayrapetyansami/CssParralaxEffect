@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.text, .parralax{
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.parralax{
+    height: 500px;
+    overflow: hidden;
+}
+
+.p1{
+    background: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.p2{
+    background: url(https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.p1, .p2{
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px){
+
+    .parralax{
+        height: 300px;
+    }
+    .p1, .p2{
+        background-size: cover;
+    }
+}
